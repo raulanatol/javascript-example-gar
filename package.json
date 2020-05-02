@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "echo \"Clean\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "git push --tags"
   },
   "repository": {
     "type": "git",
