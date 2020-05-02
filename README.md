@@ -8,6 +8,6 @@ Using:
 ## How to generate a new release
 
 ```shell script
-./scripts/finish-release [major|minor|patch]
+./.scripts/finish-release [major|minor|patch]
 ```
 
