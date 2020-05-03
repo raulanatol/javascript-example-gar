@@ -12,7 +12,7 @@ jobs:
         id: actions_releaser
         uses: raulanatol/github-actions-releaser@ts_action
         env:
-          GREN_GITHUB_TOKEN: ${{ secrets.GREN_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #      - name: Create Release
 #        id: create_release
 #        uses: raulanatol/create-release@master # jbolda/create-release@v1.1.0 # TODO: actions/create-release@latest
