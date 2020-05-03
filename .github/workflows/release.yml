@@ -10,20 +10,20 @@ jobs:
       - uses: actions/checkout@v2
       - name: Github Actions Releaser
         id: actions_releaser
-        uses: raulanatol/github-actions-releaser@migrate_to_javascript_action
+        uses: raulanatol/github-actions-releaser@ts_action
         env:
           GREN_GITHUB_TOKEN: ${{ secrets.GREN_GITHUB_TOKEN }}
-      - name: Create Release
-        id: create_release
-        uses: raulanatol/create-release@master # jbolda/create-release@v1.1.0 # TODO: actions/create-release@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body_path: ./CHANGELOG.md
-          draft: false
-          prerelease: false
+#      - name: Create Release
+#        id: create_release
+#        uses: raulanatol/create-release@master # jbolda/create-release@v1.1.0 # TODO: actions/create-release@latest
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        with:
+#          tag_name: ${{ github.ref }}
+#          release_name: Release ${{ github.ref }}
+#          body_path: ./CHANGELOG.md
+#          draft: false
+#          prerelease: false
 #      - name: Upload Release Asset
 #        id: upload-release-asset
 #        uses: actions/upload-release-asset@v1
