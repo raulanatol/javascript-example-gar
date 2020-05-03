@@ -11,3 +11,4 @@ Using:
 ./.scripts/finish-release [major|minor|patch]
 ```
 
+
