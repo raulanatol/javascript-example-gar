@@ -10,3 +10,4 @@ Using:
 ```shell script
 ./.scripts/finish-release [major|minor|patch]
 ```
+
