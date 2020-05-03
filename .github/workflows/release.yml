@@ -13,6 +13,9 @@ jobs:
         uses: raulanatol/github-actions-releaser@master
         env:
           GREN_GITHUB_TOKEN: ${{ secrets.GREN_GITHUB_TOKEN }}
+      - name: tests
+        run: |
+          cat CHANGELOG.md
       - name: Create Release
         id: create_release
         uses: jbolda/create-release@v1.1.0 # TODO: actions/create-release@latest
