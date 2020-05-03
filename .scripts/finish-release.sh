@@ -36,9 +36,14 @@ function new_version() {
   npm version "${VERSION_PARAM}"
 }
 
+function git_push() {
+  git push -u origin master && git push --tags
+}
+
 cleanup
 verify_uncommitted_changes
 verify_master_branch
 new_version
+git_push
 
 echo 'Finish release'
