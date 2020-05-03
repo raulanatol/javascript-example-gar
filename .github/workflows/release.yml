@@ -15,7 +15,7 @@ jobs:
           GREN_GITHUB_TOKEN: ${{ secrets.GREN_GITHUB_TOKEN }}
       - name: Create Release
         id: create_release
-        uses: jbolda/create-release@v1.1.0 # TODO: actions/create-release@latest
+        uses: raulanatol/create-release@master # jbolda/create-release@v1.1.0 # TODO: actions/create-release@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
